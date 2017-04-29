@@ -14,7 +14,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 //        加载配置文件,初始化 SecurityManager 工厂
-        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.shiro.ini");
+        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
 //        获取 SecurityManager 实例
         SecurityManager securityManager = factory.getInstance();
 //        把 SecurityManager 绑定到 SecurityUtils 中
